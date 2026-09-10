@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        NODE_OPTIONS = '--openssl-legacy-provider'
+    }
+    
     stages {
         stage('Git Checkout') {
             steps {
