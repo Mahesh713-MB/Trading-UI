@@ -46,7 +46,7 @@ pipeline {
                     pm2 delete Trading-UI || true
 
                     echo "Starting React application..."
-                    pm2 serve build 3000 --name Trading-UI --spa
+                    pm2 serve build 3001 --name Trading-UI --spa
 
                     echo "Saving PM2 configuration..."
                     pm2 save
